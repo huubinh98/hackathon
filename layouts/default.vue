@@ -3,7 +3,7 @@
     <b-header>
       <Header />
     </b-header>
-    <b-main class="flex flex-col">
+    <b-main class="flex flex-col p-0">
       <slot />
     </b-main>
   </b-container>

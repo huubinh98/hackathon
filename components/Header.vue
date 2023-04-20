@@ -3,7 +3,8 @@
     <div class="flex items-center">
       <b-button :icon="TeAlignJustify" class="md:hidden" />
       <h1
-        class="text-3xl ml-2 c-white-3"
+        @click="router.push('/')"
+        class="text-3xl ml-2 c-white-3 cursor-pointer"
         style="
           font-family: cursive;
           font-weight: bold;
@@ -11,10 +12,10 @@
           color: #9747ff;
         "
       >
-        WeddingTrust
+        <img src="/image/logo.svg" alt="" />
       </h1>
     </div>
-    <div>
+    <!-- <div>
       <b-button ghost small @click="router.push('/')">Trang Chủ</b-button>
       <b-dropdown trigger="click">
         <b-button ghost small @click="router.push('nhahang')"
@@ -91,7 +92,7 @@
           </b-dropdown-menu>
         </template>
       </b-dropdown>
-    </div>
+    </div> -->
 
     <b-avatar
       name="Huu Binh"
