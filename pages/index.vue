@@ -110,7 +110,7 @@
       <!-- Trang tri dam cuoi -->
       <div>
         <div class="flex justify-between items-center">
-          <h4 class="c-black">Tran Trí Đám Cưới</h4>
+          <h4 class="c-black">Trang Trí Đám Cưới</h4>
           <b-button ghost small :suffix-icon="ArrowRight">Xem thêm</b-button>
         </div>
         <b-row gutter="4" class="mt-4">
@@ -264,7 +264,7 @@ const state = reactive({
     },
     {
       icon: "/image/icon6.png",
-      title: "Duy chuyển",
+      title: "Di chuyển",
     },
     {
       icon: "/image/icon7.png",
