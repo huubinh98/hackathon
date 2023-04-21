@@ -16,6 +16,23 @@
       </div>
     </div>
     <b-main>
+      <!-- Cac dich vu khac -->
+
+      <div class="mb-4">
+        <div class="flex justify-between items-center">
+          <h4 class="c-black">Các Dịch Vụ Khác</h4>
+        </div>
+        <b-row gutter="4" class="mt-4">
+          <b-col v-for="(item, index) in state.listDichVuKhac" :key="index">
+            <div
+              class="bg-white rounded-lg h-36 flex items-center justify-center flex-col shadow-lv1 cursor-pointer hover:shadow-lv3"
+            >
+              <img :src="item.icon" />
+              <p>{{ item.title }}</p>
+            </div>
+          </b-col>
+        </b-row>
+      </div>
       <!-- Dich vu tron goi -->
       <div>
         <div class="flex justify-between items-center">
@@ -139,24 +156,60 @@
         </b-row>
       </div>
 
-      <!-- Cac dich vu khac -->
-
-      <div>
+      <div class="mb-4">
         <div class="flex justify-between items-center">
-          <h4 class="c-black">Các Dịch Vụ Khác</h4>
+          <h4 class="c-black">Về Chúng Tôi</h4>
         </div>
-        <b-row gutter="4" class="mt-4">
-          <b-col v-for="(item, index) in state.listDichVuKhac" :key="index">
-            <div
-              class="bg-white rounded-lg h-36 flex items-center justify-center flex-col shadow-lv1 cursor-pointer hover:shadow-lv3"
-            >
-              <img :src="item.icon" />
-              <p>{{ item.title }}</p>
+        <b-row class="mt-4">
+          <b-col>
+            <div>
+              <img
+                src="/image/item1.png"
+                class="w-full object-cover rounded-lg"
+              />
+            </div>
+          </b-col>
+          <b-col>
+            <div>
+              <h3 class="mb-6" style="color: #9747ff">
+                Wedding Trust Giải Pháp Cho Plan Đám Cưới
+              </h3>
+              <p>
+                Bạn đang chuẩn bị cho ngày cưới của mình và muốn tổ chức một
+                tiệc cưới trọn vẹn mà không bỏ lỡ bất cứ chi tiết nào? Hãy để
+                Wedding Trust giúp bạn. Chúng tôi là đội ngũ chuyên nghiệp trong
+                lĩnh vực booking đám cưới, với nhiều năm kinh nghiệm và đội ngũ
+                nhân viên tận tâm, được đào tạo chuyên sâu để cung cấp dịch vụ
+                chu đáo và tận tình nhất cho khách hàng. Chúng tôi hiểu rằng sự
+                chuẩn bị cho ngày cưới là một công việc đầy áp lực và chúng tôi
+                luôn sẵn sàng hỗ trợ bạn từ những bước đầu tiên cho đến khi tiệc
+                cưới của bạn hoàn tất. Chúng tôi cung cấp các gói dịch vụ tiệc
+                cưới đa dạng và phù hợp với nhu cầu và ngân sách của bạn. Từ
+                việc chọn địa điểm đến thiết kế trang trí, cùng với một số hoạt
+                động thú vị, chúng tôi cam kết mang đến cho bạn một ngày cưới vô
+                cùng đặc biệt và trọn vẹn. Với Wedding Trust, bạn có thể yên tâm
+                rằng tiệc cưới của mình sẽ được tổ chức một cách tuyệt vời nhất,
+                chi tiết nhất và hoàn hảo nhất. Liên hệ ngay với chúng tôi để
+                nhận được sự tư vấn và hỗ trợ tốt nhất cho ngày cưới của bạn.
+                Chúng tôi mong muốn được trở thành một phần quan trọng của ngày
+                cưới của bạn!
+              </p>
             </div>
           </b-col>
         </b-row>
       </div>
     </b-main>
+    <div class="bg-gray-2 w-full text-center py-6">
+      <div class="flex justify-center items-center">
+        <h4 class="c-black" style="color: #9747ff">Thông Tin Liên Hệ</h4>
+      </div>
+      <div class="mt-4 fw600">
+        <b-icon><Phone /></b-icon>: 0777122222
+      </div>
+      <div class="mt-2 fw600">
+        <b-icon><Location /></b-icon>: 138/30 Trương Công Định
+      </div>
+    </div>
   </div>
 </template>
 
@@ -168,6 +221,7 @@ import {
   Location,
   Search,
   StarFill,
+  Phone,
 } from "@bigin/icons-vue";
 import { useDark } from "@vueuse/core";
 

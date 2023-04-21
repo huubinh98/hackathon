@@ -1,10 +1,6 @@
 <template>
   <div class="relative">
-    <img
-      src="/image/trongoi4.png"
-      alt=""
-      class="w-full h-[400px] object-cover"
-    />
+    <img src="/image/item1.png" alt="" class="w-full h-[400px] object-cover" />
     <h1
       class="absolute top-[50%] left-[50%] -translate-1/2 capitalize text-center mb-4"
       style="color: #7a43c1"
@@ -15,8 +11,8 @@
   <b-main>
     <b-row class="mt-10">
       <b-col>
-        <div class="w-full">
-          <img src="/image/studio1.png" alt="" class="w-full" />
+        <div class="w-full overflow-hidden">
+          <img src="/image/item2.png" alt="" class="w-full rounded-lg" />
         </div>
       </b-col>
       <b-col>
@@ -233,6 +229,7 @@
               v-model.trim="state.infoBook.package"
               placeholder="Gói dịch vụ"
               clearable
+              disable
             />
           </b-form-item>
         </b-col>
@@ -263,7 +260,9 @@
         class="m-auto"
       />
       <p class="text-2xl mb-6">Bạn đã lên lịch thành công!</p>
-      <b-button class="w-full" @click="router.push('/')">Trang chủ</b-button>
+      <b-button class="w-full mb-2" @click="router.push('/')"
+        >Trang chủ</b-button
+      >
       <b-button class="w-full" @click="handleSucces">Xem lịch</b-button>
     </div>
   </b-dialog>
